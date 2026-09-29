@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lluvia de Colores - Eventos Infantiles</title>
+  
+  <!-- Fuentes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Archivo CSS -->
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- CONTENEDOR CON 20 GOTAS PARA EL FONDO DE LLUVIA -->
+  <div class="fondo-lluvia">
+    <div class="gota g1"></div>
+    <div class="gota g2"></div>
+    <div class="gota g3"></div>
+    <div class="gota g4"></div>
+    <div class="gota g5"></div>
+    <div class="gota g6"></div>
+    <div class="gota g7"></div>
+    <div class="gota g8"></div>
+    <div class="gota g9"></div>
+    <div class="gota g10"></div>
+    <div class="gota g11"></div>
+    <div class="gota g12"></div>
+    <div class="gota g13"></div>
+    <div class="gota g14"></div>
+    <div class="gota g15"></div>
+    <div class="gota g16"></div>
+    <div class="gota g17"></div>
+    <div class="gota g18"></div>
+    <div class="gota g19"></div>
+    <div class="gota g20"></div>
+  </div>
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="header">
+    <div class="contenedor nav-container">
+      <div class="logo">
+        <a href="#">Lluvia de <span>Colores</span></a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#reserva" class="btn-nav">Reservar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO BANNER -->
+  <section class="hero">
+    <div class="contenedor">
+      <h1>¡Hacemos tu Fiesta Inolvidable!</h1>
+      <p>Bailes entretenidos, animación llena de diversión y momentos especiales para los más pequeños.</p>
+      <div class="hero-botones">
+        <a href="#paquetes" class="btn btn-primario">Ver Paquetes</a>
+        <a href="#reserva" class="btn btn-secundario">Reservar Fecha</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="seccion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Nuestros Servicios</h2>
+      <div class="grid-servicios">
+        <div class="tarjeta-servicio">
+          <div class="icono"><i class="fas fa-star"></i></div>
+          <h3>Animación Infantil</h3>
+          <p>Juegos interactivos, bailes y concursos adaptados a todas las edades.</p>
+        </div>
+        <div class="tarjeta-servicio">
+          <div class="icono"><i class="fas fa-masks-theater"></i></div>
+          <h3>Hora Loca.</h3>
+          <p>Entretenimiento animado con bailes y actividades para los más pequeños.</p>
+        </div>
+        <div class="tarjeta-servicio">
+          <div class="icono"><i class="fas fa-smile-wink"></i></div>
+          <h3>Payaso y bailarina</h3>
+          <p>Entretenimiento animado con juegos y baile divertido para los pequeños.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PAQUETES DE FIESTA -->
+  <section id="paquetes" class="seccion bg-rosado">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Paquetes de Fiestas</h2>
+      <div class="grid-paquetes">
+
+        <!-- PAQUETE BÁSICO -->
+        <div class="tarjeta-paquete">
+          <h3>Paquete Básico</h3>
+          <div class="precio">S/250</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Hora loca y Spray</li>
+            <li><i class="fas fa-check"></i> 1 Hora de Animación</li>
+            <li><i class="fas fa-check"></i> Sonido básico y micrófono</li>
+            <li><i class="fas fa-check"></i> Payasito y Bailarina</li>
+          </ul>
+          <a href="#reserva" class="btn btn-primario" onclick="seleccionarPaquete('Básico')">Elegir Paquete</a>
+        </div>
+
+        <!-- PAQUETE PREMIUM (DESTACADO) -->
+        <div class="tarjeta-paquete destacado">
+          <div class="etiqueta">Más Popular</div>
+          <h3>Paquete Premium</h3>
+          <div class="precio">S/280</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Hora loca + Spray + juegos</li>
+            <li><i class="fas fa-check"></i> 1 hora y media de Animación</li>
+            <li><i class="fas fa-check"></i> Payasito y Bailarina</li>
+            <li><i class="fas fa-check"></i> Equipo de sonido profesional</li>
+          </ul>
+          <a href="#reserva" class="btn btn-primario" onclick="seleccionarPaquete('Premium')">Elegir Paquete</a>
+        </div>
+
+        <!-- PAQUETE VIP -->
+        <div class="tarjeta-paquete">
+          <h3>Paquete VIP</h3>
+          <div class="precio">S/450</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Hora loca + Spray + juegos</li>
+            <li><i class="fas fa-check"></i> 2 Horas de Animación </li>
+            <li><i class="fas fa-check"></i> Payasito y Bailarina</li>
+            <li><i class="fas fa-check"></i> Equipo de sonido profesional</li>
+            <li><i class="fas fa-check"></i> Animadora</li>
+          </ul>
+          <a href="#reserva" class="btn btn-primario" onclick="seleccionarPaquete('VIP')">Elegir Paquete</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN GALERÍA -->
+  <section id="galeria" class="seccion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Galería de Eventos</h2>
+      <div class="grid-galeria">
+        <img src="https://picsum.photos/400/300?random=1" alt="Fiesta Infantil 1" />
+        <img src="https://picsum.photos/400/300?random=2" alt="Fiesta Infantil 2" />
+        <img src="https://picsum.photos/400/300?random=3" alt="Fiesta Infantil 3" />
+        <img src="https://picsum.photos/400/300?random=4" alt="Fiesta Infantil 4" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE FORMULARIO DE RESERVA -->
+  <section id="reserva" class="seccion bg-rosado">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Reserva tu Paquete de Fiesta</h2>
+      
+      <div class="contenedor-formulario">
+        <form id="form-reserva" onsubmit="enviarReserva(event)">
+          <div class="grupo-input">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" placeholder="Ej. María García" required />
+          </div>
+
+          <div class="grupo-input">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" placeholder="Ej. +51 987654321" required />
+          </div>
+
+          <div class="grupo-input">
+            <label for="paquete">Paquete Seleccionado</label>
+            <select id="paquete" required>
+              <option value="">-- Selecciona un paquete --</option>
+              <option value="Básico">Paquete Básico</option>
+              <option value="Premium">Paquete Premium</option>
+              <option value="VIP">Paquete VIP</option>
+            </select>
+          </div>
+
+          <div class="grupo-input">
+            <label for="fecha">Fecha del Evento</label>
+            <input type="date" id="fecha" required />
+          </div>
+
+          <div class="grupo-input">
+            <label for="mensaje">Detalles o dudas adicionales</label>
+            <textarea id="mensaje" rows="4" placeholder="Cuéntanos más sobre la temática o temática especial..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primario btn-bloque">
+            <i class="fab fa-whatsapp"></i> Confirmar Reserva por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+ <footer id="contacto" class="footer">
+    <div class="contenedor">
+      <div class="row-footer">
+        <div>
+          <h3>Lluvia de Colores</h3>
+          <p>Haciendo realidad las mejores fiestas infantiles.</p>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><i class="fas fa-phone"></i> +51 992 032 680</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <div class="redes">
+            <a href="https://www.facebook.com/share/17jRXGov1W/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/lluv.iadecoloresvip?stkn=NzIxcTVuM25yc3Jp" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lluviadecolores13?_r=1&_t=ZS-99yl6eAAWwi" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="barra-footer">
+    <p>&copy; 2026 Lluvia de Colores. Todos los derechos reservados.</p>
+    <p class="creditos">
+      Desarrollado por 
+      <a href="https://tu-sitio-o-red-social.com" target="_blank" rel="noopener noreferrer">
+        Tu Nombre / Marca <i class="fas fa-external-link-alt"></i>
+      </a>
+    </p>
+  </div>
+      </div>
+    </div>
+  </footer>
+  
