@@ -488,3 +488,76 @@ h1, h2, h3 {
   font-size: 0.75rem;
   margin-left: 3px;
 }
+
+/* ==========================================
+   PALETA MORADO NOCHE & AZUL NOCHE (PORTAFOLIO)
+   ========================================== */
+
+/* Fondo general en azul noche muy profundo y texto claro */
+body.portafolio-dev {
+  background-color: #0a0e1a; /* Azul noche profundo */
+  color: #e2e8f0;
+}
+
+/* Header en morado noche oscuro */
+body.portafolio-dev .header {
+  background-color: #130924; /* Morado noche */
+  border-bottom: 2px solid #7c3aed; /* Borde violeta brillante */
+}
+
+/* Logo con acento morado y azul neón */
+body.portafolio-dev .logo a {
+  color: #ffffff;
+}
+
+body.portafolio-dev .logo a span {
+  color: #a855f7; /* Morado brillante */
+}
+
+/* Banner Hero con degradado de Azul Noche a Morado Noche */
+body.portafolio-dev .hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1035 50%, #0a0e1a 100%);
+  border-bottom: 1px solid #2e1065;
+}
+
+body.portafolio-dev .hero h1 {
+  color: #ffffff;
+}
+
+body.portafolio-dev .hero p {
+  color: #cbd5e1;
+}
+
+/* Botón principal en morado vibrante con texto blanco */
+body.portafolio-dev .btn-primario {
+  background-color: #7c3aed;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+body.portafolio-dev .btn-primario:hover {
+  background-color: #6d28d9;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.6);
+}
+
+/* Títulos principales en azul neón / morado claro */
+body.portafolio-dev h2,
+body.portafolio-dev .titulo-seccion {
+  color: #c084fc;
+}
+
+/* Tarjetas de integrantes en mezcla de azul y morado noche */
+body.portafolio-dev .tarjeta-equipo {
+  background-color: #131c31; /* Tarjeta en azul noche */
+  border: 1px solid #2e1065;   /* Borde morado noche */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.portafolio-dev .info-equipo h3 {
+  color: #ffffff;
+}
+
+body.portafolio-dev .info-equipo p {
+  color: #38bdf8; /* Azul claro/neón para destacar el rol */
+}
